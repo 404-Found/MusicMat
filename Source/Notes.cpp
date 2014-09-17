@@ -8,16 +8,13 @@
 #include "Notes.h"
 
 
-Notes::Notes():v_pitch(empt),v_meter(meter1){
+
+
+Notes::Notes(int i):v_pitch(static_cast<pitch>(i)),v_meter(meter1){
 
 };
 
-
-Notes::Notes(int i=0):v_pitch(static_cast<pitch>(i)),v_meter(meter1){
-
-};
-
-Notes::Notes(pitch v_y=empt) : v_pitch(v_y),v_meter(meter1){
+Notes::Notes(pitch v_y) : v_pitch(v_y),v_meter(meter1){
 	// TODO Auto-generated constructor stub
 
 }

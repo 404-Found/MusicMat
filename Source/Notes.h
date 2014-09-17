@@ -15,9 +15,8 @@ class Notes {
 	pitch v_pitch;
 	meter_t v_meter;
 public:
-	Notes();
 	Notes(int i);
-	Notes(pitch v_y);
+	Notes(pitch v_y=empt);
 	Notes(pitch v_y,meter_t v_b);
 	virtual ~Notes();
 
