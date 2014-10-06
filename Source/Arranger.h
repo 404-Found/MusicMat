@@ -9,6 +9,8 @@
 #define ARRANGER_H_
 
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
 #include <map>
 #include <array>
 #include <stack>
