@@ -50,7 +50,6 @@ void Arranger::FindChord(Notes src_note, chord& candi_chord){
 	KeyChords chord_array;
 
 	chord_array = Note2ChordMap.find(src_note.GetPitch())->second;
-	srand (time(NULL));
 	candi_chord = chord_array[rand() % (chord_array.size())];
 }
 
@@ -58,7 +57,7 @@ void Arranger::FindChord(Notes src_note, chord& candi_chord){
 void Arranger::ArrangeNote(chord src_chord, Notes& candi_note){
 	ChordsCombo pitch_array;
 
-	srand (time(NULL));
+
 	pitch_array = Chord2NoteMap.find(src_chord)->second;
 	candi_note = pitch_array[rand()%(pitch_array.size())];
 }

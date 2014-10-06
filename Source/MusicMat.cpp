@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <time.h>
 #include <stack>
 
 #include "MusicElements.h"
@@ -16,6 +17,7 @@ int main(int arg, char* argv[]){
 	stack<Notes> in_melody;
 	queue<Notes> chord_melody;
 	Arranger mybot;
+	srand (time(NULL));
 
 	cout<<"Please input a melody to start a test(eg:XXXXXXXX):"<<endl;
 	cin>>melody;
